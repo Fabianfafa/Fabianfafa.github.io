@@ -1,0 +1,108 @@
+     kj jkkln m<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SHWB.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="index.html">About</a>
+                <a href="css.html">Projects</a>
+            </nav>
+        </header>
+        <article>
+            <marquee><center><h1 class="uppercase">#4,5</h1></center></marquee>
+            <h2>WBZ ENT.</h2>
+            <p>FABIAN OCHOA GO HARD OR GO HOME<a href="http://theappacademy.us"> App Academy</a> </p>
+            <img src="http://data.whicdn.com/images/131353975/superthumb.png">
+            <img src="https://38.media.tumblr.com/30627b2a97f61b805309fd0f38fd5d43/tumblr_mxxcy0r40p1rrkbkqo1_400.gif">
+            <img src="http://i.ytimg.com/vi/3jIZKiqwjeI/hqdefault.jpg"> 
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/ZrZkrztV_jU" frameborder="0" allowfullscreen></iframe>
+            <img src="images/fix.png">
+            <img src="http://cdn.shopify.com/s/files/1/0259/8515/files/tumblr_n7g0cnftCX1syjt2wo1_1280.gif?58739">
+            <img src="http://www.cartoonbrew.com/wp-content/uploads/2013/05/tumblr_ml1y9wYUgE1rnwo2vo1_500.gif">
+        </article>
+    </body>
+</html>
+   
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      window.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      })();
+
+      function drawRectangle(myRectangle, context) {
+        context.beginPath();
+        context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);
+        context.fillStyle = '#8ED6FF';
+        context.fill();
+        context.lineWidth = myRectangle.borderWidth;
+        context.strokeStyle = 'hotpink';
+        context.stroke();
+      }
+      function animate(myRectangle, canvas, context, startTime) {
+        // update
+        var time = (new Date()).getTime() - startTime;
+        var amplitude = 130;
+
+        // in ms
+        var period = 2000;
+        var centerX = canvas.width / 2 - myRectangle.width / 2;
+        var nextX = amplitude * Math.sin(time * 2 * Math.PI / period) + centerX;
+        myRectangle.x = nextX;
+
+        // clear
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        // draw
+        drawRectangle(myRectangle, context);
+
+        // request new frame
+        requestAnimFrame(function() {
+          animate(myRectangle, canvas, context, startTime);
+        });
+      }
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var myRectangle = {
+        x: 250,
+        y: 70,
+        width: 50,
+        height: 50,
+        borderWidth: 5
+      };
+
+      drawRectangle(myRectangle, context);
+
+      // wait one second before starting animation
+      setTimeout(function() {
+        var startTime = (new Date()).getTime();
+        animate(myRectangle, canvas, context, startTime);
+      }, 1000);
+    </script>
+  </body>
+</html>      
+<body>

@@ -1,0 +1,101 @@
+h2 {
+    background-image: url(http://tmn.fhsu.edu/wp-content/uploads/2015/05/water2.jpg);
+    
+}
+
+h1 {
+    color: #AAB4BB;
+}
+
+body {
+    background-color: #CAF7DE;
+    background-image: none;
+    background-repeat: repeat;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100.5%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+} 
+
+#gallery li { 
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    padding: 5%;
+  background: black;
+    color: #bdc3c7;
+}
+
+h4.absolute {
+    position: absolute;
+    left: 80px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+}
+
+@media (max-width: 991px)
+.navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Inherited from a#menu-toggle.navbar-toggle
+a {
+    color: #9b9764;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+Inherited from body.not-front.path-node.page-node-type-page
+body {
+    font-family: "Arimo";
+    font-size: 16px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+Inherited from html.js
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
